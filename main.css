@@ -8,8 +8,7 @@ html {
 body {
     background-color: #333333;
 }
-/* #333333 = GREY */
-/* #b3ff99 = LIGHT GREEN */
+
 .wrapper {
     width: 75%;
     text-align: center;
@@ -73,5 +72,129 @@ ul.nav1 li a:hover {
     background-color: #FF9966; 
 }
 
+/* BUTTONS */
 
+.button {
+	background-color: #FF9966;
+	color: #333333;
+	text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+	height: 40px;
+	width: 100px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.button:hover {
+	background-color: #FFAA80;
+	transition: 0.2s;
+    
+}
 
+.fullwidth {
+    background-color: #FF9966;
+	color: #333333;
+	text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+	height: 40px;
+	width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.fullwidth:hover {
+    background-color: #FFAA80;
+	transition: 0.2s;
+}
+.small {
+    background-color: #FF9966;
+	color: #333333;
+	text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+	height: 30px;
+	width: 80px;
+    border: none;
+    border-radius: 10px;
+}
+.small:hover {
+    background-color: #FFAA80;
+	transition: 0.2s;
+}
+.extrasmall {
+    background-color: #FF9966;
+	color: #333333;
+	text-align:center;
+    font-size: 10px;
+    font-weight: bold;
+	height: 20px;
+	width: 60px;
+    border: none;
+    border-radius: 10px;
+}
+.extrasmall:hover {
+    background-color: #FFAA80;
+	transition: 0.2s;
+}
+
+.ghostbutton {
+    width: 100px;
+    height: 40px;
+    color: #333333;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    background-color: #FFFFFF;
+}
+.ghostbutton:hover {
+    background-color: #FFAA80;
+	transition: 0.2s;
+}
+.redbutton {
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    background-color: #FF4D4D;
+}
+.redbutton:hover {
+    background-color: #FF8080;
+	transition: 0.2s;
+}
+.greenbutton {
+    width: 100px;
+    height: 40px;
+    color: #333333;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    background-color: #4DFF4D;
+}
+.greenbutton:hover {
+    background-color: #80FF80;
+	transition: 0.2s;
+}
+.darkgreybutton {
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    background-color: #333333;
+}
+.darkgreybutton:hover {
+    background-color: #4D4D4D;
+	transition: 0.2s;
+}

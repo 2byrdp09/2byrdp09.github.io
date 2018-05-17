@@ -22,7 +22,176 @@
                 </ul>
             </div>
             <div class="workArea">
-                <p></p>
+                <br />
+                There are a lot of different buttons that can be used within a User Interface. The design of these buttons can range anything from default butoon to block, icon, ghost, various size, different colour etc.
+                <br />
+                <h3>Default Buttons</h3>
+                <div>
+                    <button class="button" type="button">Submit</button> <button class="button" type="button">Save</button> <button class="button" type="button">Add</button>
+                </div><br />
+                <details>
+                    <summary> HTML and CSS Code</summary>
+                    <h3>HTML Code </h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        <button class="button" type="button">Submit</button>
+        <button class="button" type="button">Save</button> 
+        <button class="button" type="button">Add</button>
+                        </xmp>
+                    </div>
+                    <h3>CSS Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        .button {
+        background-color: #FF9966;
+        color: #333333;
+        text-align:center;
+        font-size: 15px;
+        font-weight: bold;
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+
+        }
+        .button:hover {
+            background-color: #FFAA80;
+            transition: 0.2s;
+
+        }
+                        </xmp>
+                    </div>
+                </details>
+                <br />
+                <h3>Various Size Buttons</h3>
+                <div>
+                    <button class="fullwidth" type="button">.fullwidth</button><br/>
+                    <br />
+                    <button class="small" type="button">.small</button> <br />
+                    <br />
+                    <button class="extrasmall" type="button">.extrasmall</button>
+                </div><br />
+                <details>
+                    <summary>HTML and CSS Code</summary>
+                <h3> HTML Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        <button class="fullwidth" type="button">.fullwidth</button>
+        <button class="small" type="button">.small</button> 
+        <button class="extrasmall" type="button">.extrasmall</button>
+                        </xmp>
+                    </div>
+                <h3> CSS Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        .fullwidth {
+            background-color: #FF9966;
+            color: #333333;
+            text-align:center;
+            font-size: 15px;
+            font-weight: bold;
+            height: 40px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+        .fullwidth:hover {
+            background-color: #FFAA80;
+            transition: 0.2s;
+        }
+        .small {
+            background-color: #FF9966;
+            color: #333333;
+            text-align:center;
+            font-size: 15px;
+            font-weight: bold;
+            height: 30px;
+            width: 80px;
+            border: none;
+            border-radius: 10px;
+        }
+        .small:hover {
+            background-color: #FFAA80;
+            transition: 0.2s;
+        }
+        .extrasmall {
+            background-color: #FF9966;
+            color: #333333;
+            text-align:center;
+            font-size: 10px;
+            font-weight: bold;
+            height: 20px;
+            width: 60px;
+            border: none;
+            border-radius: 10px;
+        }
+        .extrasmall:hover {
+            background-color: #FFAA80;
+            transition: 0.2s;
+        }                   
+                        </xmp>
+                    </div>
+                </details>
+                <br />
+                <h3> Ghost Button</h3>
+                <div>
+                    <button class="ghostbutton" type="button">.ghostbutton</button>
+                    <button class="ghostbutton" type="button">.ghostbutton</button> 
+                    <button class="ghostbutton" type="button">.ghostbutton</button>
+                </div><br />
+                <details>
+                    <summary> HTML and CSS Code</summary>
+                <h3> HTML Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        <button class="ghostbutton" type="button">.ghostbutton</button>
+        <button class="ghostbutton" type="button">.ghostbutton</button> 
+        <button class="ghostbutton" type="button">.ghostbutton</button>                    
+                        </xmp>
+                    </div>
+                <h3> CSS Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        .ghostbutton {
+            width: 100px;
+            height: 40px;
+            color: #333333;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+            background-color: white;
+        }
+        .ghostbutton:hover {
+            background-color: #FFAA80;
+            transition: 0.2s;
+        }                    
+                        </xmp>
+                    </div>
+                </details>
+                <br />
+                <h3>Coloured Buttons</h3>
+                <div>
+                    <button class="redbutton" type="button">.red</button>
+                    <button class="greenbutton" type="button">.green</button> 
+                    <button class="darkgreybutton" type="button">.darkgrey</button> 
+                </div><br />
+                <details>
+                    <summary></summary>
+                <h3></h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+                            
+                        </xmp>
+                    </div>
+                <h3></h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+                            
+                        </xmp>
+                    </div>
+                </details>
             </div>
     </div>
 </body>
