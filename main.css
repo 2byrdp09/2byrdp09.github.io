@@ -184,7 +184,7 @@ ul.nav1 li a:hover {
 	transition: 0.2s;
 }
 .darkgreybutton {
-    width: 100px;
+    width: 150px;
     height: 40px;
     color: #FFFFFF;
     border: none;
@@ -197,4 +197,33 @@ ul.nav1 li a:hover {
 .darkgreybutton:hover {
     background-color: #4D4D4D;
 	transition: 0.2s;
+}
+.icon {
+	background-color: #FF9966;
+	color: #333333;
+	text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+	height: 40px;
+	width: 150px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.icon:hover {
+	background-color: #FFAA80;
+	transition: 0.2s;
+    
+}
+.buttondisabled {
+	background-color: #999999;
+	color: #333333;
+	text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+	height: 40px;
+	width: 150px;
+    border: none;
+    border-radius: 10px;
+    
 }

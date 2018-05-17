@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Pattern Library Przemyslaw Byrdy</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -25,7 +26,7 @@
                 <br />
                 There are a lot of different buttons that can be used within a User Interface. The design of these buttons can range anything from default butoon to block, icon, ghost, various size, different colour etc.
                 <br />
-                <h3>Default Buttons</h3>
+                <h3>1. Default Buttons</h3>
                 <div>
                     <button class="button" type="button">Submit</button> <button class="button" type="button">Save</button> <button class="button" type="button">Add</button>
                 </div><br />
@@ -63,7 +64,7 @@
                     </div>
                 </details>
                 <br />
-                <h3>Various Size Buttons</h3>
+                <h3>2. Various Size Buttons</h3>
                 <div>
                     <button class="fullwidth" type="button">.fullwidth</button><br/>
                     <br />
@@ -133,7 +134,7 @@
                     </div>
                 </details>
                 <br />
-                <h3> Ghost Button</h3>
+                <h3>3. Ghost Button</h3>
                 <div>
                     <button class="ghostbutton" type="button">.ghostbutton</button>
                     <button class="ghostbutton" type="button">.ghostbutton</button> 
@@ -171,27 +172,148 @@
                     </div>
                 </details>
                 <br />
-                <h3>Coloured Buttons</h3>
+                <h3>4. Coloured Buttons</h3>
                 <div>
-                    <button class="redbutton" type="button">.red</button>
-                    <button class="greenbutton" type="button">.green</button> 
-                    <button class="darkgreybutton" type="button">.darkgrey</button> 
+                    <button class="redbutton" type="button">.redbutton</button>
+                    <button class="greenbutton" type="button">.greenbutton</button> 
+                    <button class="darkgreybutton" type="button">.darkgreybutton</button> 
                 </div><br />
                 <details>
-                    <summary></summary>
-                <h3></h3>
+                    <summary> HTML and CSS Code</summary>
+                <h3> HTML Code</h3>
                     <div style="background-color: #FF9966;">
                         <xmp>
-                            
+        <button class="redbutton" type="button">.red</button>
+        <button class="greenbutton" type="button">.green</button> 
+        <button class="darkgreybutton" type="button">.darkgrey</button>                     
                         </xmp>
                     </div>
-                <h3></h3>
+                <h3> CSS Code</h3>
                     <div style="background-color: #FF9966;">
                         <xmp>
-                            
+        .redbutton {
+            width: 100px;
+            height: 40px;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+            background-color: #FF4D4D;
+        }
+        .redbutton:hover {
+            background-color: #FF8080;
+            transition: 0.2s;
+        }
+        .greenbutton {
+            width: 100px;
+            height: 40px;
+            color: #333333;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+            background-color: #4DFF4D;
+        }
+        .greenbutton:hover {
+            background-color: #80FF80;
+            transition: 0.2s;
+        }
+        .darkgreybutton {
+            width: 100px;
+            height: 40px;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+            background-color: #333333;
+        }
+        .darkgreybutton:hover {
+            background-color: #4D4D4D;
+            transition: 0.2s;
+        }                   
                         </xmp>
                     </div>
-                </details>
+                </details><br />
+                 <h3>5. Icon Buttons</h3>
+                <div>
+                    <button class="icon" type="button"><i class="fa fa-home"></i> Home</button>
+                    <button class="icon" type="button"><i class="fa fa-cogs"></i> Settings</button> 
+                    <button class="icon" type="button"><i class="fa fa-search"></i> Search</button> 
+                </div><br />
+                <details>
+                    <summary> HTML and CSS Code</summary>
+                <h3> HTML Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        Link Icons in <head></head>. <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                
+                        
+        <button class="icon" type="button"><i class="fa fa-home"></i> Home</button>
+        <button class="icon" type="button"><i class="fa fa-cogs"></i> Settings</button> 
+        <button class="icon" type="button"><i class="fa fa-search"></i> Search</button>                      
+                        </xmp>
+                    </div>
+                <h3> CSS Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+       .icon {
+            background-color: #FF9966;
+            color: #333333;
+            text-align:center;
+            font-size: 15px;
+            font-weight: bold;
+            height: 40px;
+            width: 150px;
+            border: none;
+            border-radius: 10px;
+
+        }
+        .icon:hover {
+            background-color: #FFAA80;
+            transition: 0.2s;
+
+        }                
+                        </xmp>
+                    </div>
+                </details><br />
+                <h3>6. Active/Disabled Buttons</h3>
+                <div>
+                    <button class="button" type="button"> Active</button>
+                    <button class="buttondisabled" type="button" disabled> .buttondisabled</button> 
+                </div><br />
+                <details>
+                    <summary> HTML and CSS Code</summary>
+                <h3> HTML Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+        Link Icons in <head></head>. <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                
+                        
+        <button class="button" type="button"> Active</button>
+        <button class="buttondisabled" type="button" disabled> .buttondisabled</button>                     
+                        </xmp>
+                    </div>
+                <h3> CSS Code</h3>
+                    <div style="background-color: #FF9966;">
+                        <xmp>
+       .buttondisabled {
+            background-color: #999999;
+            color: #333333;
+            text-align:center;
+            font-size: 15px;
+            font-weight: bold;
+            height: 40px;
+            width: 150px;
+            border: none;
+            border-radius: 10px;
+
+        }                
+                        </xmp>
+                    </div>
+                </details><br />
             </div>
     </div>
 </body>
