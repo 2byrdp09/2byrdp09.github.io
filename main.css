@@ -4,19 +4,24 @@ html {
     font-family: 'Open Sans', sans-serif;
     color: #333333; 
 }
+
+body {
+    background-color: #333333;
+}
 /* #333333 = GREY */
 /* #b3ff99 = LIGHT GREEN */
 .wrapper {
-    width: 80%;
+    width: 75%;
     text-align: center;
     margin: auto;
-    height: 1000px;
-    border: 2px solid #ff6633
+    border: 2px solid #ff6633;
+    background-color: white;
 }
 
 .workArea{
     width: 80%;
     margin: auto;
+    text-align: left;
 }
 
 /*Nav Bar*/
@@ -25,7 +30,7 @@ ul.nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ff6633; 
+    background-color: #333333; 
 }
 
 ul.nav li {
@@ -43,6 +48,28 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
+    background-color: #FF9966; 
+}
+
+ul.nav1 {
+    list-style-type: none;
+    margin: 0;
+    width: 120px;
+    padding: 0;
+    background-color: #333333; 
+}
+
+ul.nav1 li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+ul.nav1 li a:hover {
     background-color: #FF9966; 
 }
 

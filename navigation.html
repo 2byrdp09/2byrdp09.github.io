@@ -10,8 +10,8 @@
 <body>
     <div class="wrapper">
             <h1>Navigation</h1>
-            <div style="background-color: #ff6633;">
-                <ul class="nav" id="myNav">
+            <div>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="navigation.html">Navigation</a></li>
                     <li><a href="he.html">Header Element</a></li>
@@ -22,7 +22,107 @@
                 </ul>
             </div>
             <div class="workArea">
-                <p></p>
+                <br />
+                Navigation Bar is a key element in User Interface, this is because it allows users to access other places on the interface
+                Navigation is usually located at the top of the page where it is visible to the user however sometimes the navigation can be seen 
+                on the side of a page or under a icon depending on screen size that is being used to view the page. Most common icon found is the hamburger icon
+                <br />
+                <h3>Example of Horizontal Navigation bar (Most Common Naviation Bar)</h3>
+                <div>
+                    <ul class="nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tab 1</a></li>
+                            <li><a href="#">Tab 2</a></li>
+                            <li><a href="#">Tab 3</a></li>
+                    </ul>
+                </div>
+                <h3>HTML Code</h3>
+                <div style="background-color: #FF9966;">
+                    <xmp>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+    </ul>
+                    </xmp>
+                </div>
+                <h3>CSS Code</h3>
+                <div style="background-color: #FF9966;">
+                    <xmp>
+    ul.nav1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333; 
+    }
+
+    ul.nav1 li {
+        float: left; 
+    }
+
+    ul.nav1 li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-family: 'Open Sans', sans-serif; 
+    }
+
+    ul.nav1 li a:hover {
+        background-color: #FF9966; 
+    }
+                    </xmp>
+                </div>
+                <h3>Example of Vertical Navigation bar</h3>
+                <div>
+                    <ul class="nav1">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tab 1</a></li>
+                            <li><a href="#">Tab 2</a></li>
+                            <li><a href="#">Tab 3</a></li>
+                    </ul>
+                </div>
+                <h3>HTML Code</h3>
+                <div style="background-color: #FF9966;">
+                    <xmp>
+    <ul class="nav1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+    </ul>
+                    </xmp>
+                </div>
+                <h3>CSS Code</h3>
+                <div style="background-color: #FF9966;">
+                    <xmp>
+    ul.nav1 {
+    list-style-type: none;
+    margin: 0;
+    width: 120px;
+    padding: 0;
+    background-color: #333333; 
+    }
+
+    ul.nav1 li a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-family: 'Open Sans', sans-serif; 
+    }
+
+    ul.nav1 li a:hover {
+        background-color: #FF9966; 
+    }
+                    </xmp>
+                </div>
             </div>
     </div>
 </body>
