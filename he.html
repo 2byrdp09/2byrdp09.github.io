@@ -22,9 +22,148 @@
                 </ul>
             </div>
             <div class="workArea">
-                <p></p>
+                <br />
+                Header Elements are located at the top of the User Interface and are often items that draw users attention as soon as they load the page up. Effective use of a header element can enhance user experience with the product. One of the most common uses of header element is an image slideshow.
+                <br />
+                <h3>Automatic Slideshow</h3>
+                <div class="slideshowContainer">
+                    <div class="slides fade">
+                      <img src="image1.png" style="width:100%">
+                    </div>
+
+                    <div class="slides fade">
+                      <img src="image2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="slides fade">
+                      <img src="image3.jpg" style="width:100%">
+                    </div>
+                </div>
+                <br />
+                <div style="text-align:center">
+                  <span class="slideshowDot"></span> 
+                  <span class="slideshowDot"></span> 
+                  <span class="slideshowDot"></span> 
+                </div>
+                <br />
+                <details>
+                    <summary> HTML, CSS Code and JS Script</summary>
+                    <h3>HTML Code </h3>
+                    <div class="example">
+                        <xmp>
+        <div class="slideshowContainer">
+            <div class="slides fade">
+                <img src="image1.png" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <img src="image2.jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <img src="image3.jpg" style="width:100%">
+            </div>
+            </div>
+            <br />
+            <div style="text-align:center">
+                <span class="slideshowDot"></span> 
+                <span class="slideshowDot"></span> 
+                <span class="slideshowDot"></span> 
+        </div>  
+                        </xmp>
+                    </div>
+                    <h3>CSS Code</h3>
+                    <div class="example">
+                        <xmp>
+        .slideshowContainer {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            background-color: #333333;
+        }
+
+        .slideshowDot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #FFAA80;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.2s ease;
+        }
+
+        .slideshowDotActive {
+          background-color: #ff6633;
+        }
+
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+                        </xmp>
+                    </div>
+                <br />
+                    <h3>JS Script</h3>
+                        <div class="example">
+                        <xmp>
+       <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slides");
+                var dots = document.getElementsByClassName("slideshowDot");
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" slideshowDotActive", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " slideshowDotActive";
+                setTimeout(showSlides, 5000); 
+            }    
+        </script> 
+                        </xmp>
+                    </div>
+                </details>
+                <br />
             </div>
     </div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("slideshowDot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" slideshowDotActive", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " slideshowDotActive";
+        setTimeout(showSlides, 5000); 
+    }    
+</script>    
 </body>
 
 </html>
