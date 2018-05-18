@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Pattern Library Przemyslaw Byrdy</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -22,8 +23,108 @@
                 </ul>
             </div>
             <div class="workArea">
-                <p></p>
+                <br />
+                Header Elements are located at the top of the User Interface and are often items that draw users attention as soon as they load the page up. Effective use of a header element can enhance user experience with the product. One of the most common uses of header element is an image slideshow.
+                <br />
+                <h3>Basic Footer</h3>
+                <div class="footer" style="height: 250px;">
+                    <h3>Footer</h3>
+                </div>
+                <br />
+                <details>
+                    <summary> HTML, CSS Code and JS Script</summary>
+                    <h3>HTML Code </h3>
+                    <div class="example">
+                        <xmp>
+        <div class="footer" style="height: 250px;">
+            <h3>Footer</h3>
+        </div>  
+                        </xmp>
+                    </div>
+                    <h3>CSS Code</h3>
+                    <div class="example">
+                        <xmp>
+        .footer {
+            background-color: #ff6633;
+            height: 20%;
+            width: 100%;
+            color: #333333;
+            text-align: center;
+        }
+                        </xmp>
+                    </div>
+                </details>
+                <br />
+                <h3>3 Column Footer</h3>
+                <div class="footer">
+                        <div><p>Follow Us on</p>
+                            <a href="#"><i class="fa fa-instagram"></i> Instagram</a><br />
+                            <a href="#"><i class="fa fa-twitter"></i> Twitter</a><br />
+                            <a href="#"><i class="fa fa-facebook"></i> Facebook</a><br />
+                        </div>
+                        <div>
+                            <p>Support</p>
+                            <a href="#"> Report Abuse</a><br />
+                            <a href="#"> Community</a><br />
+                            <a href="#"> Contact Support</a><br />
+                        </div>
+                        <div>
+                            <p>Resources</p>
+                            <a href="#"> Home</a><br />
+                            <a href="#"> Site Map</a><br />
+                            <a href="#"> Webmail</a><br />
+                        </div>        
+                </div>
+                <br />
+                <details>
+                    <summary> HTML, CSS Code and JS Script</summary>
+                    <h3>HTML Code </h3>
+                    <div class="example">
+                        <xmp>
+        <div class="footer">
+                <div><p>Follow Us on</p>
+                    <a href="#"><i class="fa fa-instagram"></i> Instagram</a><br />
+                    <a href="#"><i class="fa fa-twitter"></i> Twitter</a><br />
+                    <a href="#"><i class="fa fa-facebook"></i> Facebook</a><br />
+                </div>
+                <div>
+                    <p>Support</p>
+                    <a href="#"> Report Abuse</a><br />
+                    <a href="#"> Community</a><br />
+                    <a href="#"> Contact Support</a><br />
+                </div>
+                <div>
+                    <p>Resources</p>
+                    <a href="#"> Home</a><br />
+                    <a href="#"> Site Map</a><br />
+                    <a href="#"> Webmail</a><br />
+                </div>        
+        </div>
+                        </xmp>
+                    </div>
+                    <h3>CSS Code </h3>
+                    <div class="example">
+                        <xmp>
+        .footer {
+            display: table;
+            table-layout: fixed; 
+            background-color: #ff6633;
+            height: 20%;
+            width: 100%;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .footer > div {
+            display: table-cell;
+
+        }
+                        </xmp>
+                    </div>
+                </details>
+                <br />
             </div>
+            
     </div>
 </body>
 
